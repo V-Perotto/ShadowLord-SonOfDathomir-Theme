@@ -6,7 +6,7 @@
  
 <p align="center">
   <a href="https://open-vsx.org/extension/DistroLinux/shadow-lord-son-of-dathomir-theme">
-    <img src="https://img.shields.io/open-vsx/dt/DistroLinux/shadow-lord-son-of-dathomir-theme?style=for-the-badge&logo=vscodiumlogoColor=%23D90404&labelColor=%23121212&color=%23D90404&logoSize=auto&label=Downloads&cacheSeconds=60" alt="Open VSX Downloads">
+    <img src="https://img.shields.io/open-vsx/dt/DistroLinux/shadow-lord-son-of-dathomir-theme?style=for-the-badge&logo=vscodium&logoColor=%23D90404&labelColor=%23121212&color=%23D90404&logoSize=auto&label=Downloads&cacheSeconds=60" alt="Open VSX Downloads">
   </a>
 </p>
 
