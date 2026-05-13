@@ -1,3 +1,9 @@
+# [1.1.0](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/compare/v1.0.1...v1.1.0) (2026-05-13)
+
+### Features
+
+- ✨ Add Screenshots to README ([c41e555](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/commit/c41e55553667ebf13a1408f5720eee029c278f60))
+
 ## [1.0.1](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/compare/v1.0.0...v1.0.1) (2026-05-13)
 
 ### Bug Fixes
