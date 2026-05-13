@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/compare/v1.0.0...v1.0.1) (2026-05-13)
+
+### Bug Fixes
+
+- 🐛 Fix badge link from README ([d95959a](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/commit/d95959a4a7b26dddd8e5ec6ab5066edd4289fa54))
+
 # 1.0.0 (2026-05-13)
 
 ### Features
