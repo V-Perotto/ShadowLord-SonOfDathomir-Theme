@@ -24,9 +24,6 @@
 </p>
 
 <h2 align="center">VSCodium Theme - Screenshots</h2>
-<p align="center">
-  I will update this later when i have screenshots, lol
-</p>
 <h3 align="center">Sith Holocron</h3>
 <p align="center">
 <img title="Core theme example" alt="Core theme example" src="./zoomed_example.png" style="border-radius: 1.5rem">
