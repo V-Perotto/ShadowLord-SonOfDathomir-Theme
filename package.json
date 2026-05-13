@@ -1,0 +1,157 @@
+{
+  "type": "module",
+  "name": "shadow-lord-son-of-dathomir-theme",
+  "displayName": "Shadow Lord - Son of Dathomir - Theme",
+  "description": "Embrace the Dark Side and together we will destroy the Emperor... and the Jedis",
+  "publisher": "DistroLinux",
+  "author": {
+    "name": "V-Perotto",
+    "email": "vscodium-extensions.ride690@passinbox.com",
+    "url": "https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme"
+  },
+  "homepage": "https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/issues"
+  },
+  "version": "0.0.1",
+  "icon": "logo.jpg",
+  "galleryBanner": {
+    "color": "#121212",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "red",
+    "dark",
+    "yellow",
+    "sith",
+    "star wars",
+    "customization"
+  ],
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shadow Lord - Son of Dathomir",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shadow-lord-son-of-dathomir-theme.json"
+      }
+    ]
+  },
+  "license": "MIT",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "hotfix",
+              "release": "minor"
+            },
+            {
+              "type": "perf",
+              "release": "patch"
+            },
+            {
+              "type": "breaking",
+              "release": "major"
+            }
+          ]
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "CHANGELOG.md",
+              "label": "Changelog"
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  },
+  "lint-staged": {
+    "*.{json,md,mts,ts,js,mjs}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  },
+  "packageManager": "pnpm@11.1.1+sha512.d1fdf5f73c617b64fa1a56a81c3c8dfe0e966e33a6010aa256b517ae77be21d93e05affc0de1a83b0e4f29d569f68b446ae8f068cd7247c0bb3df0fb4d7bdf9a",
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.1",
+    "@commitlint/config-conventional": "^21.0.1",
+    "@commitlint/types": "^21.0.1",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "13.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "12.0.6",
+    "@semantic-release/npm": "^13.1.4",
+    "@semantic-release/release-notes-generator": "14.1.0",
+    "commitizen": "^4.3.1",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "cz-git": "^1.12.0",
+    "husky": "^9.1.7",
+    "lodash-es": "^4.17.23",
+    "ovsx": "^0.10.9",
+    "prettier": "^3.8.1",
+    "semantic-release": "25.0.3"
+  }
+}

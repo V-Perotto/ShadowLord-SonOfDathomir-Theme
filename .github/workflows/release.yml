@@ -1,0 +1,80 @@
+name: Release and Publish
+
+on:
+  push:
+    branches:
+      - main  # Triggers when code is pushed to the main branch
+  release:
+    types: 
+      - published
+  workflow_dispatch:
+    input:
+      release:
+        description: "Unleash your potential"
+        type: boolean
+        required: true
+        default: true
+      publishOVSX:
+        description: "Publish to Open VSX"
+        type: boolean
+        required: true
+        default: true
+
+permissions:
+  contents: read # for checkout
+
+jobs:
+  release:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest  # Runs on an Ubuntu runner
+    environment: Sith Temple
+    
+    permissions:
+      contents: write         # to be able to publish a GitHub release
+      issues: write           # to be able to comment on released issues
+      pull-requests: write    # to be able to comment on released pull requests
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4.2.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6.1.0
+        with:
+          node-version: "lts/*"
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: npm i -g pnpm@latest
+
+      - name: Install dependencies
+        run: pnpm i
+      
+      - name: Verify the provenance signatures for installed dependencies
+        run: pnpm audit && pnpm audit --fix
+
+      - name: Cache modules
+        uses: actions/cache@v4.2.0
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-modules-
+
+      - name: Run Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Open VSX
+        # if: steps.semantic.outputs.new_release_published == 'true'
+        run: npx ovsx publish
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+        
