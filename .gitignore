@@ -1,0 +1,7 @@
+node_modules
+*.vsix
+.env
+.pnp.cjs
+.pnp.loader.mjs
+.husky/_
+.vscode/
