@@ -1,6 +1,6 @@
 allowBuilds:
-  '@vscode/vsce-sign': set this to true or false
-  keytar: set this to true or false
+  '@vscode/vsce-sign': false
+  keytar: false
 overrides:
   '@isaacs/brace-expansion@<=5.0.0': '>=5.0.1'
   ajv@>=7.0.0-alpha.0 <8.18.0: '>=8.18.0'
