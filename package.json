@@ -54,7 +54,7 @@
   "license": "MIT",
   "release": {
     "branches": [
-      "main"
+      "maul"
     ],
     "plugins": [
       [
