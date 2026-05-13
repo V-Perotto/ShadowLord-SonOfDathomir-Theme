@@ -34,7 +34,7 @@
 <img title="Theme example" alt="Theme example" src="./theme_example.png" style="border-radius: 1.5rem">
 </p>
 
-<h3 align="center">Unleash your true power, download this theme and</h3>
+<h3 align="center">Unleash your true power, download this theme and join the Dark Side</h3>
 <h4 align="center"><i>"Can I count on you?"</i></h4>
 <p align="center">
   <img title="Can I count on you?" alt="Can I count on you?" src="./star-wars-darth-maul.gif" style="border-radius: 2.5rem"></img>
