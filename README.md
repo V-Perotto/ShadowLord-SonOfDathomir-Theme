@@ -3,7 +3,7 @@
 <p align="center">
 <img title="Star Wars: Maul, Shadow Lord - Poster" alt="Star Wars: Maul, Shadow Lord - Poster" src="./logo.jpg" width=250px style="border-radius: 2.5rem">
 </p>
- 
+
 <p align="center">
   <a href="https://open-vsx.org/extension/DistroLinux/shadow-lord-son-of-dathomir-theme">
     <img src="https://img.shields.io/open-vsx/dt/DistroLinux/shadow-lord-son-of-dathomir-theme?style=for-the-badge&logo=vscodium&logoColor=%23D90404&labelColor=%23121212&color=%23D90404&logoSize=auto&label=Downloads&cacheSeconds=60" alt="Open VSX Downloads">
@@ -34,7 +34,7 @@
 <img title="Theme example" alt="Theme example" src="./theme_example.png" style="border-radius: 1.5rem">
 </p>
 
-<h3 align="center">Unleash your true power, download this theme and join the Dark Side</h3>
+<h3 align="center">Unleash your true power, download this theme and join the Dark Side.</h3>
 <h4 align="center"><i>"Can I count on you?"</i></h4>
 <p align="center">
   <img title="Can I count on you?" alt="Can I count on you?" src="./star-wars-darth-maul.gif" style="border-radius: 2.5rem"></img>
