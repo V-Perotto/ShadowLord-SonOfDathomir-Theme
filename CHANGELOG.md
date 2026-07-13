@@ -1,3 +1,9 @@
+## [1.1.1](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/compare/v1.1.0...v1.1.1) (2026-07-13)
+
+### Bug Fixes
+
+- 🐛 Fix README ([9bbfb62](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/commit/9bbfb62834dc74d3af5712efe84df4e5358de2ea))
+
 # [1.1.0](https://github.com/V-Perotto/ShadowLord-SonOfDathomir-Theme/compare/v1.0.1...v1.1.0) (2026-05-13)
 
 ### Features
