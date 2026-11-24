@@ -136,8 +136,8 @@
   },
   "packageManager": "pnpm@11.1.1+sha512.d1fdf5f73c617b64fa1a56a81c3c8dfe0e966e33a6010aa256b517ae77be21d93e05affc0de1a83b0e4f29d569f68b446ae8f068cd7247c0bb3df0fb4d7bdf9a",
   "devDependencies": {
-    "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/cli": "^21.2.4",
+    "@commitlint/config-conventional": "^21.2.4",
     "@commitlint/types": "^21.2.3",
     "@semantic-release/changelog": "7.0.0",
     "@semantic-release/commit-analyzer": "13.0.1",
@@ -150,8 +150,8 @@
     "cz-git": "^1.14.0",
     "husky": "^9.1.7",
     "lodash-es": "^4.18.1",
-    "ovsx": "^1.2.0",
-    "prettier": "^3.9.9",
+    "ovsx": "^1.4.0",
+    "prettier": "^3.10.1",
     "semantic-release": "25.0.3"
   }
 }
